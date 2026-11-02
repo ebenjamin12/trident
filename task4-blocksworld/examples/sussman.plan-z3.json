@@ -1,0 +1,56 @@
+{
+  "format": "blocksworld-plan",
+  "version": 1,
+  "instance_id": "sussman-anomaly",
+  "engine": "z3",
+  "status": "sat",
+  "length": 3,
+  "actions": [
+    {
+      "block": "A",
+      "from": "C",
+      "to": "table"
+    },
+    {
+      "block": "B",
+      "from": "table",
+      "to": "A"
+    },
+    {
+      "block": "C",
+      "from": "table",
+      "to": "B"
+    }
+  ],
+  "stats": {
+    "horizons_attempted": 4,
+    "per_horizon": [
+      {
+        "horizon": 0,
+        "result": "unsat",
+        "ms": 1.265
+      },
+      {
+        "horizon": 1,
+        "result": "unsat",
+        "ms": 1.049
+      },
+      {
+        "horizon": 2,
+        "result": "unsat",
+        "ms": 3.748
+      },
+      {
+        "horizon": 3,
+        "result": "sat",
+        "ms": 4.977
+      }
+    ],
+    "max_horizon": 6,
+    "optimal_horizon": 3,
+    "conflicts": 2,
+    "decisions": 8,
+    "propagations": 170,
+    "max_memory": 19.04
+  }
+}

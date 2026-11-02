@@ -1,0 +1,41 @@
+initial state
+      ┌───┐
+      │ A │
+┌───┐ ├───┤
+│ B │ │ C │
+─┴───┴─┴───┴─
+2/3 table slots used
+
+move 1: unstack A from C and put it on the table
+┌───┐ ┌───┐ ┌───┐
+│ A │ │ B │ │ C │
+─┴───┴─┴───┴─┴───┴─
+3/3 table slots used
+
+move 2: pick up B from the table and stack it on A
+┌───┐      
+│ B │      
+├───┤ ┌───┐
+│ A │ │ C │
+─┴───┴─┴───┴─
+2/3 table slots used
+
+move 3: pick up C from the table and stack it on B
+┌───┐
+│ C │
+├───┤
+│ B │
+├───┤
+│ A │
+─┴───┴─
+1/3 table slots used
+
+goal (for reference)
+┌───┐
+│ C │
+├───┤
+│ B │
+├───┤
+│ A │
+─┴───┴─
+1/3 table slots used

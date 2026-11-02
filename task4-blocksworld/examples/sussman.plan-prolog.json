@@ -1,0 +1,35 @@
+{
+  "format": "blocksworld-plan",
+  "version": 1,
+  "instance_id": "sussman-anomaly",
+  "engine": "prolog",
+  "status": "sat",
+  "length": 3,
+  "actions": [
+    {
+      "block": "A",
+      "from": "C",
+      "to": "table"
+    },
+    {
+      "block": "B",
+      "from": "table",
+      "to": "A"
+    },
+    {
+      "block": "C",
+      "from": "table",
+      "to": "B"
+    }
+  ],
+  "stats": {
+    "nodes": 3,
+    "inferences": 1087,
+    "cputime_ms": 0.9999,
+    "bound_reached": 3,
+    "strategy": "idastar",
+    "global_stack_bytes": 35016,
+    "mode": "wasm",
+    "max_depth": 6
+  }
+}

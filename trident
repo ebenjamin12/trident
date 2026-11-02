@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+"""Trident — unified front-end for the solver packages in this repository.
+
+Each problem lives in its own self-contained package with its own
+``python -m <package>`` entry point; this script only dispatches to them so
+that a single command spells every problem the same way::
+
+    ./trident blocks   generate --blocks 8 --seed 42
+    ./trident tetravex generate --rows 3 --cols 3
+
+It adds nothing of its own: the packages remain independently runnable, and
+nothing here is on the import path of either one.
+"""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+
+#: problem name -> (directory holding the package, module to import)
+PROBLEMS = {
+    "blocks": ("task4-blocksworld", "blocksworld.cli"),
+    "tetravex": ("task3-tetravex", "tetravex.cli"),
+}
+
+# Directories are listed relative to this script, not absolute and not
+# prefixed with the checkout's own folder name: the repository can be cloned
+# under any name and the help text should not imply otherwise.
+USAGE = (
+    "Trident - a multi-paradigm problem-solving toolkit\n\n"
+    "usage: trident <problem> <command> [options]\n\n"
+    "problems:\n"
+    + "".join(f"  {name:10s} ./{d}/\n" for name, (d, _) in PROBLEMS.items())
+    + "\nrun `trident <problem> --help` for a problem's own commands\n"
+)
+
+
+def main(argv: list[str]) -> int:
+    if not argv or argv[0] in {"-h", "--help", "help"}:
+        sys.stdout.write(USAGE)
+        return 0
+    problem = argv[0]
+    if problem not in PROBLEMS:
+        sys.stderr.write(f"unknown problem {problem!r}\n\n{USAGE}")
+        return 2
+
+    directory, module_name = PROBLEMS[problem]
+    package_dir = ROOT / directory
+    if not package_dir.is_dir():
+        sys.stderr.write(f"missing package directory: {package_dir}\n")
+        return 2
+    sys.path.insert(0, str(package_dir))
+
+    import importlib
+
+    module = importlib.import_module(module_name)
+    return int(module.main(argv[1:]))
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv[1:]))

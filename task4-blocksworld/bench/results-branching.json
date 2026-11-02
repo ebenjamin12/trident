@@ -1,0 +1,833 @@
+{
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "timestamp_utc": "2026-11-01T12:54:52Z",
+    "prolog": "SWI-Prolog via swipl-wasm 3.8.2",
+    "z3": "Z3 5.3.3"
+  },
+  "config": {
+    "suites": [
+      "branching"
+    ],
+    "engines": [
+      "prolog:idastar",
+      "z3"
+    ],
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "sizes": {
+      "branching": [
+        1,
+        2,
+        3,
+        6
+      ]
+    },
+    "reps": 3,
+    "timeout_s": 90.0,
+    "max_stacks": 2
+  },
+  "startup_overhead_ms": {
+    "prolog:idastar": 557.6444159999028,
+    "z3": 3.30204900001263
+  },
+  "measurements": [
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "1 stacks",
+      "instance_id": "bw-6b-c6-ms1-partition-seed1",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 1,
+      "initial_stacks": 1,
+      "heuristic": 5,
+      "status": "sat",
+      "plan_length": 10,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        724.0296449999732,
+        820.6494529999873,
+        879.9489220000396
+      ],
+      "engine_ms": [
+        157.0001,
+        228.9999,
+        244.9999
+      ],
+      "nodes": 440,
+      "inferences": 452430,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 53.6,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "1 stacks",
+      "instance_id": "bw-6b-c6-ms1-partition-seed1",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 1,
+      "initial_stacks": 1,
+      "heuristic": 5,
+      "status": "sat",
+      "plan_length": 10,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        641.8563890001678,
+        676.695817000109,
+        610.341223999967
+      ],
+      "engine_ms": [
+        263.068,
+        264.333,
+        234.421
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 11,
+      "conflicts": 71,
+      "memory": 24.63,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "1 stacks",
+      "instance_id": "bw-6b-c6-ms1-partition-seed2",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 2,
+      "initial_stacks": 1,
+      "heuristic": 5,
+      "status": "sat",
+      "plan_length": 10,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        621.2364450000223,
+        508.5309319999851,
+        587.30863400001
+      ],
+      "engine_ms": [
+        73.0,
+        71.0001,
+        77.9998
+      ],
+      "nodes": 228,
+      "inferences": 212063,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 53.9,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "1 stacks",
+      "instance_id": "bw-6b-c6-ms1-partition-seed2",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 2,
+      "initial_stacks": 1,
+      "heuristic": 5,
+      "status": "sat",
+      "plan_length": 10,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        769.8479420000695,
+        769.974417999947,
+        832.5545309999143
+      ],
+      "engine_ms": [
+        326.12399999999997,
+        309.488,
+        364.313
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 11,
+      "conflicts": 84,
+      "memory": 24.72,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "1 stacks",
+      "instance_id": "bw-6b-c6-ms1-partition-seed3",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 3,
+      "initial_stacks": 1,
+      "heuristic": 6,
+      "status": "sat",
+      "plan_length": 10,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        669.6318919998703,
+        700.853054000163,
+        637.001539000039
+      ],
+      "engine_ms": [
+        64.0001,
+        65.0001,
+        57.9998
+      ],
+      "nodes": 117,
+      "inferences": 128233,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 53.9,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "1 stacks",
+      "instance_id": "bw-6b-c6-ms1-partition-seed3",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 3,
+      "initial_stacks": 1,
+      "heuristic": 6,
+      "status": "sat",
+      "plan_length": 10,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        748.2304860000113,
+        790.2950709999459,
+        872.0694879998518
+      ],
+      "engine_ms": [
+        339.836,
+        319.384,
+        336.952
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 11,
+      "conflicts": 65,
+      "memory": 24.76,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "2 stacks",
+      "instance_id": "bw-6b-c6-ms2-partition-seed1",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 1,
+      "initial_stacks": 2,
+      "heuristic": 5,
+      "status": "sat",
+      "plan_length": 9,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        1188.0797540000003,
+        1333.5458829999425,
+        1149.0454560000671
+      ],
+      "engine_ms": [
+        616.9999,
+        733.0,
+        651.0
+      ],
+      "nodes": 1673,
+      "inferences": 1738186,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 51.4,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "2 stacks",
+      "instance_id": "bw-6b-c6-ms2-partition-seed1",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 1,
+      "initial_stacks": 2,
+      "heuristic": 5,
+      "status": "sat",
+      "plan_length": 9,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        750.8525490000011,
+        782.9784539999309,
+        662.1988449999208
+      ],
+      "engine_ms": [
+        286.874,
+        293.704,
+        249.073
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 10,
+      "conflicts": 58,
+      "memory": 24.76,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "2 stacks",
+      "instance_id": "bw-6b-c6-ms2-partition-seed2",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 2,
+      "initial_stacks": 2,
+      "heuristic": 6,
+      "status": "sat",
+      "plan_length": 7,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        545.425873999875,
+        531.360278999955,
+        584.6433490000891
+      ],
+      "engine_ms": [
+        10.9999,
+        20.0,
+        20.9999
+      ],
+      "nodes": 23,
+      "inferences": 30229,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 46.7,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "2 stacks",
+      "instance_id": "bw-6b-c6-ms2-partition-seed2",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 2,
+      "initial_stacks": 2,
+      "heuristic": 6,
+      "status": "sat",
+      "plan_length": 7,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        391.9811620000928,
+        393.5878759998559,
+        437.8665889998956
+      ],
+      "engine_ms": [
+        148.37800000000001,
+        141.802,
+        153.17
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 8,
+      "conflicts": 35,
+      "memory": 24.76,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "2 stacks",
+      "instance_id": "bw-6b-c6-ms2-partition-seed3",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 3,
+      "initial_stacks": 1,
+      "heuristic": 6,
+      "status": "sat",
+      "plan_length": 10,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        530.4557130000376,
+        564.0186460000223,
+        596.4672730001439
+      ],
+      "engine_ms": [
+        45.0001,
+        50.0,
+        51.0001
+      ],
+      "nodes": 117,
+      "inferences": 128233,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 53.9,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "2 stacks",
+      "instance_id": "bw-6b-c6-ms2-partition-seed3",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 3,
+      "initial_stacks": 1,
+      "heuristic": 6,
+      "status": "sat",
+      "plan_length": 10,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        714.236253000081,
+        669.3316159999085,
+        674.1159619998598
+      ],
+      "engine_ms": [
+        266.418,
+        282.637,
+        262.88100000000003
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 11,
+      "conflicts": 49,
+      "memory": 24.76,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "3 stacks",
+      "instance_id": "bw-6b-c6-ms3-partition-seed1",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 1,
+      "initial_stacks": 2,
+      "heuristic": 5,
+      "status": "sat",
+      "plan_length": 9,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        1024.7805970000172,
+        1057.6646019999316,
+        1080.8662360000199
+      ],
+      "engine_ms": [
+        551.9998,
+        543.0,
+        602.0
+      ],
+      "nodes": 1673,
+      "inferences": 1738186,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 51.4,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "3 stacks",
+      "instance_id": "bw-6b-c6-ms3-partition-seed1",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 1,
+      "initial_stacks": 2,
+      "heuristic": 5,
+      "status": "sat",
+      "plan_length": 9,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        615.0195280001753,
+        541.5655809999862,
+        567.7647239999715
+      ],
+      "engine_ms": [
+        256.089,
+        227.114,
+        241.161
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 10,
+      "conflicts": 81,
+      "memory": 24.76,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "3 stacks",
+      "instance_id": "bw-6b-c6-ms3-partition-seed2",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 2,
+      "initial_stacks": 3,
+      "heuristic": 6,
+      "status": "sat",
+      "plan_length": 6,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        568.2163960000253,
+        568.4451970000737,
+        610.2208180000162
+      ],
+      "engine_ms": [
+        4.0002,
+        4.9999,
+        4.9999
+      ],
+      "nodes": 8,
+      "inferences": 9107,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 44.4,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "3 stacks",
+      "instance_id": "bw-6b-c6-ms3-partition-seed2",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 2,
+      "initial_stacks": 3,
+      "heuristic": 6,
+      "status": "sat",
+      "plan_length": 6,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        314.46788199991715,
+        305.2659780000795,
+        299.2352609999216
+      ],
+      "engine_ms": [
+        96.518,
+        94.303,
+        94.224
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 7,
+      "conflicts": 31,
+      "memory": 24.76,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "3 stacks",
+      "instance_id": "bw-6b-c6-ms3-partition-seed3",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 3,
+      "initial_stacks": 3,
+      "heuristic": 5,
+      "status": "sat",
+      "plan_length": 8,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        926.3128009999946,
+        747.984550999945,
+        641.2001149999469
+      ],
+      "engine_ms": [
+        196.0001,
+        136.0002,
+        141.0
+      ],
+      "nodes": 362,
+      "inferences": 393363,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 49.2,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "3 stacks",
+      "instance_id": "bw-6b-c6-ms3-partition-seed3",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 3,
+      "initial_stacks": 3,
+      "heuristic": 5,
+      "status": "sat",
+      "plan_length": 8,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        593.075472999999,
+        410.23716900008367,
+        419.0125220000027
+      ],
+      "engine_ms": [
+        240.76,
+        135.793,
+        147.25300000000001
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 9,
+      "conflicts": 14,
+      "memory": 24.76,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "6 stacks",
+      "instance_id": "bw-6b-c6-partition-seed1",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 1,
+      "initial_stacks": 4,
+      "heuristic": 3,
+      "status": "sat",
+      "plan_length": 3,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        551.4750580000509,
+        544.5700520001537,
+        483.6182619999363
+      ],
+      "engine_ms": [
+        3.0,
+        2.0001,
+        2.0001
+      ],
+      "nodes": 3,
+      "inferences": 4639,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 37.3,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "6 stacks",
+      "instance_id": "bw-6b-c6-partition-seed1",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 1,
+      "initial_stacks": 4,
+      "heuristic": 3,
+      "status": "sat",
+      "plan_length": 3,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        83.51129699985904,
+        85.64118799995413,
+        110.92481199989379
+      ],
+      "engine_ms": [
+        22.704,
+        26.639,
+        28.276
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 4,
+      "conflicts": 2,
+      "memory": 24.76,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "6 stacks",
+      "instance_id": "bw-6b-c6-partition-seed2",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 2,
+      "initial_stacks": 6,
+      "heuristic": 0,
+      "status": "sat",
+      "plan_length": 0,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        538.2835349998913,
+        529.5246560001488,
+        506.86428099993464
+      ],
+      "engine_ms": [
+        0.9999,
+        0.9999,
+        0.0
+      ],
+      "nodes": 0,
+      "inferences": 263,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 30.2,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "6 stacks",
+      "instance_id": "bw-6b-c6-partition-seed2",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 2,
+      "initial_stacks": 6,
+      "heuristic": 0,
+      "status": "sat",
+      "plan_length": 0,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        10.317380000060439,
+        8.521285000142598,
+        7.793160000119315
+      ],
+      "engine_ms": [
+        2.073,
+        1.644,
+        1.504
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 1,
+      "conflicts": null,
+      "memory": 24.76,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "strategy": "idastar",
+      "suite": "branching",
+      "label": "6 stacks",
+      "instance_id": "bw-6b-c6-partition-seed3",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 3,
+      "initial_stacks": 6,
+      "heuristic": 1,
+      "status": "sat",
+      "plan_length": 1,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        486.17919399998755,
+        546.8597300000511,
+        799.7268149999854
+      ],
+      "engine_ms": [
+        0.0,
+        1.9999,
+        0.9999
+      ],
+      "nodes": 1,
+      "inferences": 1401,
+      "horizons": null,
+      "conflicts": null,
+      "memory": 32.5,
+      "memory_unit": "KB (prolog global stack at exit)",
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "strategy": null,
+      "suite": "branching",
+      "label": "6 stacks",
+      "instance_id": "bw-6b-c6-partition-seed3",
+      "n_blocks": 6,
+      "table_capacity": 6,
+      "seed": 3,
+      "initial_stacks": 6,
+      "heuristic": 1,
+      "status": "sat",
+      "plan_length": 1,
+      "verified": true,
+      "reps": 3,
+      "wall_ms": [
+        30.99878499983788,
+        29.240680999919277,
+        27.802801000007094
+      ],
+      "engine_ms": [
+        4.166,
+        4.409000000000001,
+        4.138
+      ],
+      "nodes": null,
+      "inferences": null,
+      "horizons": 2,
+      "conflicts": null,
+      "memory": 24.76,
+      "memory_unit": "MB (z3 max memory)",
+      "error": null
+    }
+  ]
+}

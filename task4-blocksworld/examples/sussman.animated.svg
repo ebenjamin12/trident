@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="174" viewBox="0 0 230 174">
+<rect width="100%" height="100%" fill="#f5f6f8" />
+<g opacity="1">
+<animate attributeName="opacity" calcMode="discrete" values="1;0;0;0" keyTimes="0.0000;0.2500;0.5000;0.7500" dur="4.80s" repeatCount="indefinite" />
+<text x="115.0" y="10.0" fill="#15181c" font-size="13" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle" dominant-baseline="hanging">start</text>
+<rect x="20.0" y="146.0" width="190.0" height="8.0" rx="2" fill="#3a4049" />
+<rect x="54.0" y="112.0" width="54.0" height="34.0" rx="4" fill="#e08b2e" stroke="#15181c" stroke-width="1.5" />
+<text x="81.0" y="129.0" fill="#15181c" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">B</text>
+<rect x="122.0" y="112.0" width="54.0" height="34.0" rx="4" fill="#e5c13a" stroke="#15181c" stroke-width="1.5" />
+<text x="149.0" y="129.0" fill="#15181c" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">C</text>
+<rect x="122.0" y="78.0" width="54.0" height="34.0" rx="4" fill="#d64545" stroke="#15181c" stroke-width="1.5" />
+<text x="149.0" y="95.0" fill="#ffffff" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">A</text>
+</g>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" values="0;1;0;0" keyTimes="0.0000;0.2500;0.5000;0.7500" dur="4.80s" repeatCount="indefinite" />
+<text x="115.0" y="10.0" fill="#15181c" font-size="13" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle" dominant-baseline="hanging">1. A: C → table</text>
+<rect x="20.0" y="146.0" width="190.0" height="8.0" rx="2" fill="#3a4049" />
+<rect x="20.0" y="112.0" width="54.0" height="34.0" rx="4" fill="#d64545" stroke="#15181c" stroke-width="1.5" />
+<text x="47.0" y="129.0" fill="#ffffff" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">A</text>
+<rect x="88.0" y="112.0" width="54.0" height="34.0" rx="4" fill="#e08b2e" stroke="#15181c" stroke-width="1.5" />
+<text x="115.0" y="129.0" fill="#15181c" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">B</text>
+<rect x="156.0" y="112.0" width="54.0" height="34.0" rx="4" fill="#e5c13a" stroke="#15181c" stroke-width="1.5" />
+<text x="183.0" y="129.0" fill="#15181c" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">C</text>
+</g>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" values="0;0;1;0" keyTimes="0.0000;0.2500;0.5000;0.7500" dur="4.80s" repeatCount="indefinite" />
+<text x="115.0" y="10.0" fill="#15181c" font-size="13" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle" dominant-baseline="hanging">2. B: table → A</text>
+<rect x="20.0" y="146.0" width="190.0" height="8.0" rx="2" fill="#3a4049" />
+<rect x="54.0" y="112.0" width="54.0" height="34.0" rx="4" fill="#d64545" stroke="#15181c" stroke-width="1.5" />
+<text x="81.0" y="129.0" fill="#ffffff" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">A</text>
+<rect x="54.0" y="78.0" width="54.0" height="34.0" rx="4" fill="#e08b2e" stroke="#15181c" stroke-width="1.5" />
+<text x="81.0" y="95.0" fill="#15181c" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">B</text>
+<rect x="122.0" y="112.0" width="54.0" height="34.0" rx="4" fill="#e5c13a" stroke="#15181c" stroke-width="1.5" />
+<text x="149.0" y="129.0" fill="#15181c" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">C</text>
+</g>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" values="0;0;0;1" keyTimes="0.0000;0.2500;0.5000;0.7500" dur="4.80s" repeatCount="indefinite" />
+<text x="115.0" y="10.0" fill="#15181c" font-size="13" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle" dominant-baseline="hanging">3. C: table → B</text>
+<rect x="20.0" y="146.0" width="190.0" height="8.0" rx="2" fill="#3a4049" />
+<rect x="88.0" y="112.0" width="54.0" height="34.0" rx="4" fill="#d64545" stroke="#15181c" stroke-width="1.5" />
+<text x="115.0" y="129.0" fill="#ffffff" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">A</text>
+<rect x="88.0" y="78.0" width="54.0" height="34.0" rx="4" fill="#e08b2e" stroke="#15181c" stroke-width="1.5" />
+<text x="115.0" y="95.0" fill="#15181c" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">B</text>
+<rect x="88.0" y="44.0" width="54.0" height="34.0" rx="4" fill="#e5c13a" stroke="#15181c" stroke-width="1.5" />
+<text x="115.0" y="61.0" fill="#15181c" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">C</text>
+</g>
+</svg>

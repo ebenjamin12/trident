@@ -1,0 +1,369 @@
+{
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "timestamp_utc": "2026-11-01T03:11:08Z",
+    "z3": "Z3 5.3.3",
+    "prolog": "SWI-Prolog via swipl-wasm 3.8.2"
+  },
+  "config": {
+    "engines": [
+      "z3",
+      "prolog"
+    ],
+    "sizes": [
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "symbols": 6,
+    "reps": 1,
+    "timeout_s": 120.0,
+    "unique": false,
+    "bordered": false,
+    "rotation": false
+  },
+  "startup_overhead_ms": {
+    "z3": 2.2024569999530286,
+    "prolog": 971.0676559999456
+  },
+  "measurements": [
+    {
+      "engine": "z3",
+      "instance_id": "tv-4x5-s6-nf-seed1",
+      "rows": 4,
+      "cols": 5,
+      "symbols": 6,
+      "seed": 1,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        335.80402600000525
+      ],
+      "engine_ms": [],
+      "stats": {
+        "conflicts": 649,
+        "decisions": 1123,
+        "propagations": 207829,
+        "restarts": 5,
+        "max_memory": 22.21
+      },
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "instance_id": "tv-4x5-s6-nf-seed1",
+      "rows": 4,
+      "cols": 5,
+      "symbols": 6,
+      "seed": 1,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        3755.100107999965
+      ],
+      "engine_ms": [
+        2866.0002
+      ],
+      "stats": {
+        "inferences": 12057728,
+        "cputime_ms": 2866.0002,
+        "mode": "wasm"
+      },
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "instance_id": "tv-4x5-s6-nf-seed2",
+      "rows": 4,
+      "cols": 5,
+      "symbols": 6,
+      "seed": 2,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        147.07273400006216
+      ],
+      "engine_ms": [],
+      "stats": {
+        "conflicts": 370,
+        "decisions": 625,
+        "propagations": 62878,
+        "restarts": 3,
+        "max_memory": 22.21
+      },
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "instance_id": "tv-4x5-s6-nf-seed2",
+      "rows": 4,
+      "cols": 5,
+      "symbols": 6,
+      "seed": 2,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        1116.9060329999638
+      ],
+      "engine_ms": [
+        169.0001
+      ],
+      "stats": {
+        "inferences": 759002,
+        "cputime_ms": 169.0001,
+        "mode": "wasm"
+      },
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "instance_id": "tv-5x5-s6-nf-seed1",
+      "rows": 5,
+      "cols": 5,
+      "symbols": 6,
+      "seed": 1,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        540.2364440000156
+      ],
+      "engine_ms": [],
+      "stats": {
+        "conflicts": 1591,
+        "decisions": 2692,
+        "propagations": 331024,
+        "restarts": 9,
+        "max_memory": 22.32
+      },
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "instance_id": "tv-5x5-s6-nf-seed1",
+      "rows": 5,
+      "cols": 5,
+      "symbols": 6,
+      "seed": 1,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        11593.873695000071
+      ],
+      "engine_ms": [
+        10667.0001
+      ],
+      "stats": {
+        "inferences": 44992948,
+        "cputime_ms": 10667.0001,
+        "mode": "wasm"
+      },
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "instance_id": "tv-5x5-s6-nf-seed2",
+      "rows": 5,
+      "cols": 5,
+      "symbols": 6,
+      "seed": 2,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        926.2816769999063
+      ],
+      "engine_ms": [],
+      "stats": {
+        "conflicts": 2556,
+        "decisions": 4579,
+        "propagations": 526301,
+        "restarts": 13,
+        "max_memory": 22.59
+      },
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "instance_id": "tv-5x5-s6-nf-seed2",
+      "rows": 5,
+      "cols": 5,
+      "symbols": 6,
+      "seed": 2,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        1434.2746340000758
+      ],
+      "engine_ms": [
+        530.9999
+      ],
+      "stats": {
+        "inferences": 2348923,
+        "cputime_ms": 530.9999,
+        "mode": "wasm"
+      },
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "instance_id": "tv-5x6-s6-nf-seed1",
+      "rows": 5,
+      "cols": 6,
+      "symbols": 6,
+      "seed": 1,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        7346.825206999938
+      ],
+      "engine_ms": [],
+      "stats": {
+        "conflicts": 8040,
+        "decisions": 14158,
+        "propagations": 4551621,
+        "restarts": 23,
+        "max_memory": 27.95
+      },
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "instance_id": "tv-5x6-s6-nf-seed1",
+      "rows": 5,
+      "cols": 6,
+      "symbols": 6,
+      "seed": 1,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        107771.25700300008
+      ],
+      "engine_ms": [
+        106805.0001
+      ],
+      "stats": {
+        "inferences": 452738329,
+        "cputime_ms": 106805.0001,
+        "mode": "wasm"
+      },
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "instance_id": "tv-5x6-s6-nf-seed2",
+      "rows": 5,
+      "cols": 6,
+      "symbols": 6,
+      "seed": 2,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        9319.568641999922
+      ],
+      "engine_ms": [],
+      "stats": {
+        "conflicts": 11337,
+        "decisions": 22459,
+        "propagations": 5856057,
+        "restarts": 26,
+        "max_memory": 28.44
+      },
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "instance_id": "tv-5x6-s6-nf-seed2",
+      "rows": 5,
+      "cols": 6,
+      "symbols": 6,
+      "seed": 2,
+      "status": "sat",
+      "verified": true,
+      "reps": 1,
+      "wall_ms": [
+        12974.60220899984
+      ],
+      "engine_ms": [
+        12031.0001
+      ],
+      "stats": {
+        "inferences": 47851477,
+        "cputime_ms": 12031.0001,
+        "mode": "wasm"
+      },
+      "error": null
+    },
+    {
+      "engine": "z3",
+      "instance_id": "tv-6x6-s6-nf-seed1",
+      "rows": 6,
+      "cols": 6,
+      "symbols": 6,
+      "seed": 1,
+      "status": "unknown",
+      "verified": null,
+      "reps": 1,
+      "wall_ms": [
+        120218.09881299987
+      ],
+      "engine_ms": [],
+      "stats": {
+        "conflicts": 129622,
+        "decisions": 199821,
+        "propagations": 45748574,
+        "restarts": 51,
+        "max_memory": 32.69
+      },
+      "error": null
+    },
+    {
+      "engine": "prolog",
+      "instance_id": "tv-6x6-s6-nf-seed1",
+      "rows": 6,
+      "cols": 6,
+      "symbols": 6,
+      "seed": 1,
+      "status": "unknown",
+      "verified": null,
+      "reps": 1,
+      "wall_ms": [
+        120109.83711600011
+      ],
+      "engine_ms": [],
+      "stats": {
+        "mode": "wasm"
+      },
+      "error": null
+    }
+  ]
+}

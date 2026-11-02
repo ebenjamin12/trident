@@ -1,0 +1,146 @@
+name: tests
+
+# Four jobs, because the project has four independent toolchains and a failure
+# in any one of them should be attributable on sight:
+#
+#   lint            ruff, over the Python in task3 and task4
+#   python          both test suites against a NATIVE SWI-Prolog
+#   wasm-fallback   both test suites with NO swipl installed, exercising the
+#                   swipl-wasm path instead
+#   haskell         task1 compiles clean under -Wall and its suite runs
+#
+# The `python` and `wasm-fallback` split matters: the Prolog engines prefer a
+# native binary and fall back to WASM, and only running both proves that both
+# paths work. Locally only the WASM path can be exercised on a machine without
+# SWI-Prolog, so this workflow is where the native path gets its coverage.
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pipx install ruff
+      - name: ruff check
+        run: ruff check .
+
+  python:
+    name: python ${{ matrix.python-version }} (native swipl)
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install SWI-Prolog
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends swi-prolog-nox
+          swipl --version
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r task3-tetravex/requirements.txt
+          pip install -r task4-blocksworld/requirements.txt
+
+      - name: Report detected engines
+        run: |
+          python -m tetravex engines
+          python -m blocksworld engines
+        shell: bash
+        working-directory: ${{ github.workspace }}
+        env:
+          PYTHONPATH: task3-tetravex:task4-blocksworld
+
+      - name: TetraVex test suite
+        working-directory: task3-tetravex
+        run: python -m pytest tests/ -q
+
+      - name: Blocks World test suite
+        working-directory: task4-blocksworld
+        run: python -m pytest tests/ -q
+
+      - name: End-to-end CLI check from the repository root
+        run: |
+          set -eux
+          ./trident blocks generate --blocks 6 --seed 1 --max-stacks 2 -o /tmp/p.json
+          ./trident blocks solve /tmp/p.json --engine prolog -o /tmp/pl.json
+          ./trident blocks solve /tmp/p.json --engine z3     -o /tmp/z3.json
+          ./trident blocks verify /tmp/p.json /tmp/pl.json
+          ./trident blocks verify /tmp/p.json /tmp/z3.json
+          ./trident tetravex generate --rows 3 --cols 3 --seed 42 -o /tmp/t.json
+          ./trident tetravex solve /tmp/t.json --engine prolog -o /tmp/tp.json
+          ./trident tetravex verify /tmp/t.json /tmp/tp.json
+
+  wasm-fallback:
+    name: swipl-wasm fallback (no native swipl)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Confirm no native swipl is present
+        run: |
+          if command -v swipl; then
+            echo "swipl unexpectedly on PATH; this job must test the fallback" >&2
+            exit 1
+          fi
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r task3-tetravex/requirements.txt
+          pip install -r task4-blocksworld/requirements.txt
+
+      - name: Install the WASM runtime for both problems
+        run: |
+          npm ci --prefix task3-tetravex/tetravex/prolog
+          npm ci --prefix task4-blocksworld/blocksworld/prolog
+
+      - name: TetraVex test suite
+        working-directory: task3-tetravex
+        run: python -m pytest tests/ -q
+
+      - name: Blocks World test suite
+        working-directory: task4-blocksworld
+        run: python -m pytest tests/ -q
+
+  haskell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: haskell-actions/setup@v2
+        with:
+          ghc-version: "9.4"
+      - name: Compile under -Wall
+        working-directory: task1-haskell-cryptography
+        run: ghc -Wall -o cryptanalysis-toolkit SimpleCryptography.hs
+      - name: Run the built-in test suite
+        working-directory: task1-haskell-cryptography
+        # Menu option 4 runs the 25-case suite; 0 exits.
+        run: printf '4\n\n0\n' | ./cryptanalysis-toolkit

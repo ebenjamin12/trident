@@ -1,0 +1,55 @@
+{
+  "format": "tetravex-solution",
+  "version": 1,
+  "instance_id": "tv-3x3-s10-nf-seed1",
+  "engine": "prolog",
+  "grid": [
+    [
+      {
+        "tile": 8,
+        "rot": 0
+      },
+      {
+        "tile": 0,
+        "rot": 0
+      },
+      {
+        "tile": 2,
+        "rot": 0
+      }
+    ],
+    [
+      {
+        "tile": 3,
+        "rot": 0
+      },
+      {
+        "tile": 5,
+        "rot": 0
+      },
+      {
+        "tile": 6,
+        "rot": 0
+      }
+    ],
+    [
+      {
+        "tile": 1,
+        "rot": 0
+      },
+      {
+        "tile": 4,
+        "rot": 0
+      },
+      {
+        "tile": 7,
+        "rot": 0
+      }
+    ]
+  ],
+  "stats": {
+    "inferences": 144841,
+    "cputime_ms": 52.0,
+    "mode": "wasm"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "format": "blocksworld-instance",
+  "version": 1,
+  "id": "sussman-anomaly",
+  "blocks": ["A", "B", "C"],
+  "initial": [["B"], ["C", "A"]],
+  "goal": [["A", "B", "C"]],
+  "table_capacity": 3
+}

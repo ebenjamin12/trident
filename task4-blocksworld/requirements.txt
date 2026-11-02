@@ -1,0 +1,13 @@
+# Blocks World planning: Prolog symbolic search vs Z3 SAT planning.
+#
+# z3-solver is the only required runtime dependency. The Prolog engine is an
+# external toolchain, not a Python package: install SWI-Prolog (`swipl` on
+# PATH), or run `npm install` in blocksworld/prolog/ for the WASM fallback.
+z3-solver>=4.12.0
+
+# Optional: animated GIF output. Without it, --format animated-svg produces an
+# equivalent animation with no dependencies at all.
+pillow>=10.0
+
+# Test suite only.
+pytest>=7.0

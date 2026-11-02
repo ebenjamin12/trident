@@ -1,0 +1,55 @@
+# ---------------------------------------------------------------------------
+# Haskell (task1)
+# ---------------------------------------------------------------------------
+dist-newstyle/
+.stack-work/
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
+*.prof
+*.aux
+*.hp
+cryptanalysis-toolkit
+simple-cryptography
+
+# ---------------------------------------------------------------------------
+# Python (task2, task3, task4)
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Node — only needed for the optional swipl-wasm fallback.
+#
+# node_modules/ is ignored because it is ~25 MB per task and is restored by
+# `npm install`. package-lock.json is deliberately NOT ignored: it pins the
+# exact swipl-wasm version, which is what makes that fallback reproducible.
+# ---------------------------------------------------------------------------
+node_modules/
+
+# ---------------------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Scratch output. Recorded benchmark results under task*/bench/ ARE tracked —
+# they are referenced by the READMEs — so only stray files are listed here.
+# ---------------------------------------------------------------------------
+/tmp/
+*.tmp

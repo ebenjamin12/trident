@@ -1,0 +1,15 @@
+cabal-version:      2.4
+name:               cryptanalysis-toolkit
+version:            0.1.0.0
+synopsis:           Classical cipher implementation and cryptanalysis toolkit
+description:        Caesar and Vigenere ciphers with frequency analysis and
+                    Kasiski examination for key-length estimation.
+license:            MIT
+author:             Elisha Benjamin Sreepalle
+build-type:         Simple
+
+executable cryptanalysis-toolkit
+    main-is:          SimpleCryptography.hs
+    build-depends:    base >=4.14 && <5
+    default-language: Haskell2010
+    ghc-options:      -Wall

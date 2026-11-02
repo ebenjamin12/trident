@@ -1,0 +1,57 @@
+{
+  "format": "tetravex-solution",
+  "version": 1,
+  "instance_id": "tv-3x3-s10-nf-seed1",
+  "engine": "z3",
+  "grid": [
+    [
+      {
+        "tile": 8,
+        "rot": 0
+      },
+      {
+        "tile": 0,
+        "rot": 0
+      },
+      {
+        "tile": 2,
+        "rot": 0
+      }
+    ],
+    [
+      {
+        "tile": 3,
+        "rot": 0
+      },
+      {
+        "tile": 5,
+        "rot": 0
+      },
+      {
+        "tile": 6,
+        "rot": 0
+      }
+    ],
+    [
+      {
+        "tile": 1,
+        "rot": 0
+      },
+      {
+        "tile": 4,
+        "rot": 0
+      },
+      {
+        "tile": 7,
+        "rot": 0
+      }
+    ]
+  ],
+  "stats": {
+    "conflicts": 116,
+    "decisions": 385,
+    "propagations": 5207,
+    "restarts": 1,
+    "max_memory": 19.02
+  }
+}

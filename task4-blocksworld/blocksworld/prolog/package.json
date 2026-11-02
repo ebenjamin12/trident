@@ -1,0 +1,10 @@
+{
+  "name": "blocksworld-prolog-wasm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Optional swipl-wasm fallback runner, used only when no native swipl is on PATH.",
+  "dependencies": {
+    "swipl-wasm": "^3.6.4"
+  }
+}

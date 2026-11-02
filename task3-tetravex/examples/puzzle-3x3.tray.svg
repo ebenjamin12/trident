@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="375" viewBox="0 0 375 375">
+<rect width="100%" height="100%" fill="#f5f6f8" />
+<text x="187.4" y="28.0" fill="#15181c" font-size="16" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="hanging">TetraVex 3x3 - tiles</text>
+<polygon points="24.0,54.0 96.0,54.0 60.0,90.0" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="60.0" y="69.8" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<polygon points="96.0,54.0 96.0,126.0 60.0,90.0" fill="#5ba65b" stroke="#ffffff" stroke-width="1" />
+<text x="80.2" y="90.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">3</text>
+<polygon points="96.0,126.0 24.0,126.0 60.0,90.0" fill="#e08b2e" stroke="#ffffff" stroke-width="1" />
+<text x="60.0" y="110.2" fill="#15181c" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">1</text>
+<polygon points="24.0,126.0 24.0,54.0 60.0,90.0" fill="#3f8fbf" stroke="#ffffff" stroke-width="1" />
+<text x="39.8" y="90.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">4</text>
+<rect x="24.0" y="54.0" width="72.0" height="72.0" fill="none" stroke="#15181c" stroke-width="2" />
+<text x="60.0" y="137.0" fill="#3a4049" font-size="11" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle">#0</text>
+<polygon points="108.96,54.0 180.95999999999998,54.0 144.95999999999998,90.0" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="145.0" y="69.8" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<polygon points="180.95999999999998,54.0 180.95999999999998,126.0 144.95999999999998,90.0" fill="#3f8fbf" stroke="#ffffff" stroke-width="1" />
+<text x="165.1" y="90.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">4</text>
+<polygon points="180.95999999999998,126.0 108.96,126.0 144.95999999999998,90.0" fill="#e5c13a" stroke="#ffffff" stroke-width="1" />
+<text x="145.0" y="110.2" fill="#15181c" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">2</text>
+<polygon points="108.96,126.0 108.96,54.0 144.95999999999998,90.0" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="124.8" y="90.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<rect x="108.96" y="54.0" width="72.0" height="72.0" fill="none" stroke="#15181c" stroke-width="2" />
+<text x="145.0" y="137.0" fill="#3a4049" font-size="11" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle">#1</text>
+<polygon points="193.92,54.0 265.91999999999996,54.0 229.92,90.0" fill="#6b58c4" stroke="#ffffff" stroke-width="1" />
+<text x="229.9" y="69.8" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">5</text>
+<polygon points="265.91999999999996,54.0 265.91999999999996,126.0 229.92,90.0" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="250.1" y="90.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<polygon points="265.91999999999996,126.0 193.92,126.0 229.92,90.0" fill="#6b58c4" stroke="#ffffff" stroke-width="1" />
+<text x="229.9" y="110.2" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">5</text>
+<polygon points="193.92,126.0 193.92,54.0 229.92,90.0" fill="#3f8fbf" stroke="#ffffff" stroke-width="1" />
+<text x="209.8" y="90.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">4</text>
+<rect x="193.92" y="54.0" width="72.0" height="72.0" fill="none" stroke="#15181c" stroke-width="2" />
+<text x="229.9" y="137.0" fill="#3a4049" font-size="11" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle">#2</text>
+<polygon points="278.88,54.0 350.88,54.0 314.88,90.0" fill="#e08b2e" stroke="#ffffff" stroke-width="1" />
+<text x="314.9" y="69.8" fill="#15181c" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">1</text>
+<polygon points="350.88,54.0 350.88,126.0 314.88,90.0" fill="#3f8fbf" stroke="#ffffff" stroke-width="1" />
+<text x="335.0" y="90.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">4</text>
+<polygon points="350.88,126.0 278.88,126.0 314.88,90.0" fill="#6b58c4" stroke="#ffffff" stroke-width="1" />
+<text x="314.9" y="110.2" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">5</text>
+<polygon points="278.88,126.0 278.88,54.0 314.88,90.0" fill="#3f8fbf" stroke="#ffffff" stroke-width="1" />
+<text x="294.7" y="90.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">4</text>
+<rect x="278.88" y="54.0" width="72.0" height="72.0" fill="none" stroke="#15181c" stroke-width="2" />
+<text x="314.9" y="137.0" fill="#3a4049" font-size="11" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle">#3</text>
+<polygon points="24.0,152.95999999999998 96.0,152.95999999999998 60.0,188.95999999999998" fill="#e5c13a" stroke="#ffffff" stroke-width="1" />
+<text x="60.0" y="168.8" fill="#15181c" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">2</text>
+<polygon points="96.0,152.95999999999998 96.0,224.95999999999998 60.0,188.95999999999998" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="80.2" y="189.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<polygon points="96.0,224.95999999999998 24.0,224.95999999999998 60.0,188.95999999999998" fill="#e08b2e" stroke="#ffffff" stroke-width="1" />
+<text x="60.0" y="209.1" fill="#15181c" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">1</text>
+<polygon points="24.0,224.95999999999998 24.0,152.95999999999998 60.0,188.95999999999998" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="39.8" y="189.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<rect x="24.0" y="152.95999999999998" width="72.0" height="72.0" fill="none" stroke="#15181c" stroke-width="2" />
+<text x="60.0" y="236.0" fill="#3a4049" font-size="11" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle">#4</text>
+<polygon points="108.96,152.95999999999998 180.95999999999998,152.95999999999998 144.95999999999998,188.95999999999998" fill="#e08b2e" stroke="#ffffff" stroke-width="1" />
+<text x="145.0" y="168.8" fill="#15181c" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">1</text>
+<polygon points="180.95999999999998,152.95999999999998 180.95999999999998,224.95999999999998 144.95999999999998,188.95999999999998" fill="#3f8fbf" stroke="#ffffff" stroke-width="1" />
+<text x="165.1" y="189.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">4</text>
+<polygon points="180.95999999999998,224.95999999999998 108.96,224.95999999999998 144.95999999999998,188.95999999999998" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="145.0" y="209.1" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<polygon points="108.96,224.95999999999998 108.96,152.95999999999998 144.95999999999998,188.95999999999998" fill="#e08b2e" stroke="#ffffff" stroke-width="1" />
+<text x="124.8" y="189.0" fill="#15181c" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="108.96" y="152.95999999999998" width="72.0" height="72.0" fill="none" stroke="#15181c" stroke-width="2" />
+<text x="145.0" y="236.0" fill="#3a4049" font-size="11" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle">#5</text>
+<polygon points="193.92,152.95999999999998 265.91999999999996,152.95999999999998 229.92,188.95999999999998" fill="#e08b2e" stroke="#ffffff" stroke-width="1" />
+<text x="229.9" y="168.8" fill="#15181c" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">1</text>
+<polygon points="265.91999999999996,152.95999999999998 265.91999999999996,224.95999999999998 229.92,188.95999999999998" fill="#e08b2e" stroke="#ffffff" stroke-width="1" />
+<text x="250.1" y="189.0" fill="#15181c" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">1</text>
+<polygon points="265.91999999999996,224.95999999999998 193.92,224.95999999999998 229.92,188.95999999999998" fill="#6b58c4" stroke="#ffffff" stroke-width="1" />
+<text x="229.9" y="209.1" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">5</text>
+<polygon points="193.92,224.95999999999998 193.92,152.95999999999998 229.92,188.95999999999998" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="209.8" y="189.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<rect x="193.92" y="152.95999999999998" width="72.0" height="72.0" fill="none" stroke="#15181c" stroke-width="2" />
+<text x="229.9" y="236.0" fill="#3a4049" font-size="11" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle">#6</text>
+<polygon points="278.88,152.95999999999998 350.88,152.95999999999998 314.88,188.95999999999998" fill="#6b58c4" stroke="#ffffff" stroke-width="1" />
+<text x="314.9" y="168.8" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">5</text>
+<polygon points="350.88,152.95999999999998 350.88,224.95999999999998 314.88,188.95999999999998" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="335.0" y="189.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<polygon points="350.88,224.95999999999998 278.88,224.95999999999998 314.88,188.95999999999998" fill="#e08b2e" stroke="#ffffff" stroke-width="1" />
+<text x="314.9" y="209.1" fill="#15181c" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">1</text>
+<polygon points="278.88,224.95999999999998 278.88,152.95999999999998 314.88,188.95999999999998" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="294.7" y="189.0" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<rect x="278.88" y="152.95999999999998" width="72.0" height="72.0" fill="none" stroke="#15181c" stroke-width="2" />
+<text x="314.9" y="236.0" fill="#3a4049" font-size="11" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle">#7</text>
+<polygon points="24.0,251.92 96.0,251.92 60.0,287.91999999999996" fill="#6b58c4" stroke="#ffffff" stroke-width="1" />
+<text x="60.0" y="267.8" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">5</text>
+<polygon points="96.0,251.92 96.0,323.91999999999996 60.0,287.91999999999996" fill="#d64545" stroke="#ffffff" stroke-width="1" />
+<text x="80.2" y="287.9" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">0</text>
+<polygon points="96.0,323.91999999999996 24.0,323.91999999999996 60.0,287.91999999999996" fill="#6b58c4" stroke="#ffffff" stroke-width="1" />
+<text x="60.0" y="308.1" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">5</text>
+<polygon points="24.0,323.91999999999996 24.0,251.92 60.0,287.91999999999996" fill="#3f8fbf" stroke="#ffffff" stroke-width="1" />
+<text x="39.8" y="287.9" fill="#ffffff" font-size="15.8" font-family="DejaVu Sans, Verdana, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">4</text>
+<rect x="24.0" y="251.92" width="72.0" height="72.0" fill="none" stroke="#15181c" stroke-width="2" />
+<text x="60.0" y="334.9" fill="#3a4049" font-size="11" font-family="DejaVu Sans, Verdana, sans-serif" text-anchor="middle">#8</text>
+</svg>

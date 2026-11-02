@@ -1,0 +1,76 @@
+{
+  "format": "tetravex-instance",
+  "version": 1,
+  "id": "tv-3x3-s10-nf-seed1",
+  "rows": 3,
+  "cols": 3,
+  "symbols": 10,
+  "allow_rotation": false,
+  "border": null,
+  "tiles": [
+    {
+      "id": 0,
+      "top": 9,
+      "right": 6,
+      "bottom": 1,
+      "left": 6
+    },
+    {
+      "id": 1,
+      "top": 7,
+      "right": 1,
+      "bottom": 3,
+      "left": 9
+    },
+    {
+      "id": 2,
+      "top": 1,
+      "right": 9,
+      "bottom": 7,
+      "left": 6
+    },
+    {
+      "id": 3,
+      "top": 4,
+      "right": 7,
+      "bottom": 7,
+      "left": 0
+    },
+    {
+      "id": 4,
+      "top": 7,
+      "right": 5,
+      "bottom": 1,
+      "left": 1
+    },
+    {
+      "id": 5,
+      "top": 1,
+      "right": 4,
+      "bottom": 7,
+      "left": 7
+    },
+    {
+      "id": 6,
+      "top": 7,
+      "right": 3,
+      "bottom": 6,
+      "left": 4
+    },
+    {
+      "id": 7,
+      "top": 6,
+      "right": 0,
+      "bottom": 7,
+      "left": 5
+    },
+    {
+      "id": 8,
+      "top": 2,
+      "right": 6,
+      "bottom": 4,
+      "left": 0
+    }
+  ],
+  "seed": 1
+}
