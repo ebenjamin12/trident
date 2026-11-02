@@ -78,6 +78,25 @@ A Prolog toolchain is needed for the Prolog engines — either `swipl` on `PATH`
 (preferred), or `npm ci` inside `task3-tetravex/tetravex/prolog/` and
 `task4-blocksworld/blocksworld/prolog/` for the WASM fallback.
 
+### The dispatcher's executable bit
+
+`trident` must stay committed with git mode `100755`. The README documents
+`./trident <problem> <command>` as the entry point, so a clone carrying
+`100644` instead gives every user `Permission denied` on every documented
+command, while the test suites still pass — they import the packages directly
+and never go through the dispatcher.
+
+The bit is easy to lose by rebuilding the tree from an archive extracted on a
+filesystem without a Unix executable bit, or with `core.fileMode=false` set.
+Restore it without touching file contents:
+
+```bash
+git update-index --chmod=+x trident
+```
+
+The `lint` job checks the committed mode, so a regression fails fast with the
+remedy rather than as a bare exit 126 later on.
+
 ### Before opening a pull request
 
 ```bash

@@ -35,6 +35,26 @@ jobs:
       - name: ruff check
         run: ruff check .
 
+      # The README documents `./trident ...` as the entry point, so the mode
+      # recorded in git is load-bearing: a clone carrying 100644 gives every
+      # user "Permission denied" (exit 126) on every documented command. The
+      # bit is easily lost by re-uploading the tree from an archive extracted
+      # on a filesystem that has no Unix executable bit. Checked here rather
+      # than with `test -x` so the message arrives in the fast job and names
+      # the remedy.
+      - name: The trident dispatcher must be committed executable
+        run: |
+          mode=$(git ls-files -s trident | cut -d' ' -f1)
+          if [ "$mode" != "100755" ]; then
+            echo "::error file=trident::trident is committed with mode $mode, expected 100755"
+            echo "Fix it without changing file contents:" >&2
+            echo "    git update-index --chmod=+x trident" >&2
+            echo "    git commit -m 'Restore the executable bit on the trident dispatcher'" >&2
+            echo "    git push" >&2
+            exit 1
+          fi
+          echo "trident is committed 100755"
+
   python:
     name: python ${{ matrix.python-version }} (native swipl)
     runs-on: ubuntu-latest
@@ -80,6 +100,14 @@ jobs:
 
       - name: End-to-end CLI check from the repository root
         run: |
+          # Invoked as ./trident, exactly as the README tells users to. If the
+          # committed mode is wrong this fails with a bare "Permission denied",
+          # so say so plainly first; the lint job carries the full remedy.
+          if [ ! -x trident ]; then
+            echo "::error file=trident::./trident is not executable - expected git mode 100755" >&2
+            echo "Run: git update-index --chmod=+x trident" >&2
+            exit 1
+          fi
           set -eux
           ./trident blocks generate --blocks 6 --seed 1 --max-stacks 2 -o /tmp/p.json
           ./trident blocks solve /tmp/p.json --engine prolog -o /tmp/pl.json
